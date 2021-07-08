@@ -1,5 +1,5 @@
 const board = document.querySelector('#board');
-const colors = ['yellow', 'orange', 'red']
+const colors = ['#fe3218', '#ff911a', '#e100f5', '#450eff', '#21006f'];
 const SQUARES_NUMBER = 500;
 
 for (let i = 0; i < SQUARES_NUMBER; i++) {
@@ -26,5 +26,5 @@ function removeColor(element) {
 
 function getRandomColor() {
     const index = Math.floor(Math.random() * colors.length);
-    return colors(index);
+    return colors[index];
 }
